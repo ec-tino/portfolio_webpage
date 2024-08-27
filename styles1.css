@@ -1,0 +1,304 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, rgb(26, 33, 39), rgb(116, 200, 212));
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    padding: 1px;
+    /*text-align: center; */
+}
+
+#About { background: linear-gradient(to bottom, rgb(233, 238, 239), white); }
+#Projects { background: linear-gradient(to bottom, white, rgb(199, 219, 234)); }
+#Skills { background: linear-gradient(to bottom, rgb(199, 219, 234), rgb(145, 207, 223)); }
+#contact { background: linear-gradient(to bottom, rgb(112, 196, 217),rgb(94, 178, 217));}
+
+
+/* HEADER SECTION */
+.portfolio-header {
+    /* background: linear-gradient(to bottom, rgb(17, 112, 212), rgb(233, 138, 200));*/
+    background-image: url('myImages/img2.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 300px; /* Adjust height as needed */
+}
+
+.profile-picture {
+    flex-shrink: 0;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.profile-picture img {
+    border-radius: 2%;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.headline-text h1 {
+    margin: 0;
+    font-size: 2.5em; /* Adjust size as needed */
+    color: black;
+}
+
+.headline-text p {
+    margin: 5px 0 0;
+    font-size: 1.2em; /* Adjust size as needed */
+    color: black;
+}
+.p1 {
+    text-align: center;
+    font-style:italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+.headline-text {
+    margin-top: 20px;
+}
+
+/* ABOUT ME SECTION */
+.About {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.About h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: left;
+}
+
+.work-experience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience {
+    flex: 1;
+    min-width: 150px; /* Minimum width for each experience div */
+    background: linear-gradient(to bottom, white, rgb(201, 228, 231));
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.text {
+    display: block;
+    font-size: medium;
+    font-style: oblique;
+}
+.line {
+    margin-top: 5px;
+    margin-bottom: 0;
+    height: 2px;
+    background-color:rgb(182, 209, 237)
+}
+
+/* PHOTO GALLERY */
+.photo-gallery {
+    position: relative;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.photo-text{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.gallery-photo {
+    width: 50%;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 3px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(212, 223, 241, 0.8);
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* PROJECTS */
+.projects {
+    flex: 1;
+    min-width: 100px; /* Minimum width for each experience div */
+    background: linear-gradient(to bottom, white, rgb(201, 228, 231));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.project-buttons {
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.20s;
+    background-color: rgb(26, 33, 39);
+    box-shadow: 0 2px 4px rgba(80, 42, 73, 0.909);
+    border: none;
+}
+.project-buttons:hover{
+    opacity: 0.75;
+}
+.project-buttons:active{
+    opacity: 0.5;
+}
+
+/* SKILLS */
+.skills {
+    flex: 1;
+    min-width: 100px; /* Minimum width for each experience div */
+    background: linear-gradient(to bottom, rgb(26, 33, 39), rgb(76, 191, 220));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+.list-skills, .certifications {
+    color:#f0f8ff
+}
+
+/* CONTACT */
+.contact {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-item .icon {
+    color: white;
+    margin-right: 10px;
+    fill: white; /* Icon color */
+}
+
+.contact-item p {
+    font-size: 15px;
+    margin: 0;
+    color: #333;
+}
+.socials {
+    cursor: pointer;
+    margin-right: 15px;
+}
+.socials :hover{
+    fill: white;
+}
+.socials :active{
+    opacity: 0.6;
+}
+
+/* LINKED PAGE */
+.margins {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.margins p{
+    font-size: medium;
+    font: 'Arial Narrow Bold';
+}
+.download {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.download-button{
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background: linear-gradient(to bottom, rgb(63, 60, 62), rgb(8, 11, 16));
+    text-align: center;
+    transition: 0.20s;   
+}
+.download-button:hover{
+    opacity: 0.80;
+}
+.download-button:active{
+    opacity: 0.5;
+}
